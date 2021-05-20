@@ -1,0 +1,2 @@
+lang = "cpp"
+run = "g++ -o main main.cpp -lncurses; ./main"
