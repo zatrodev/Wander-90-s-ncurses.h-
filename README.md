@@ -1,4 +1,4 @@
-# Wander 90s <ncurses.h>
+# Wander 90s <C++ ncurses.h>
 Game based on my android game called **Wander** using `ncurses.h`
 
 ## Installation
