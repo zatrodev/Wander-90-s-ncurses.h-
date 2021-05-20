@@ -118,12 +118,12 @@ struct Logic
                     pipes[i]._delete(pipes);
                     bullets[0]._delete();
                     pipes.erase(pipes.begin() + i);
-                    bullets.pop_back();
+                    bullets.clear();
                     shoot = false;
                 }
-                else if (bullets[0].bulletX + 2 == columns - 1){
+                else if (bullets[0].bulletX + 2 == columns - 3){
                     bullets[0]._delete();
-                    bullets.pop_back();
+                    bullets.clear();
                     shoot = false;
                 }
             }
