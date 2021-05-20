@@ -8,7 +8,7 @@ struct Bullet
 
     Bullet(int shipX, int shipY)
         : bulletX(shipX + 4)
-        , bulletY(shipY)
+        , bulletY(shipY + 1)
     {
         draw();
     }
