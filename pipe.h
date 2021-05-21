@@ -27,6 +27,7 @@ struct Pipe
     {
         pipe_coords.clear();
         start_color();
+        init_color(COLOR_BLACK, 0, 0, 0);
         init_pair(color, COLOR_BLACK, color);
         attron(COLOR_PAIR(color));
         for (float i = 2; i < topHeight; ++i)
