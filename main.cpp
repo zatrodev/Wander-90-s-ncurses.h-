@@ -11,6 +11,7 @@
 #define PIPE_GAP 4
 #define PIPE_SPAWN 30
 #define BULLET_ADD 100
+#define BULLET_ADD_WANDER 3
 
 void setup(int &columns, int &rows, float &shipX, float &shipY){
     clear();
@@ -67,7 +68,7 @@ void score(int score, int rows, Logic &logic, vector<Pipe> &vec_pipes, Ship ship
             {
                 printw("Score %d", ++point);
 
-                if (point % 2 == 0 && point != 0)
+                if (point % BULLET_ADD_WANDER == 0 && point != 0)
                     ++bulletCount;
             }
         }
