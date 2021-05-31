@@ -13,7 +13,6 @@ struct Ship
         : shipX(shipX)
         , shipY(shipY)
     {
-        draw();
     }
 
     void init()
